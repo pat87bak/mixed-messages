@@ -121,3 +121,11 @@ const generateMessage = () => {
 
     return msg;
 };
+
+// Funtion to display message to the console
+const displayMessage = msg => {
+    console.log(msg());
+};
+
+// Main funtion
+displayMessage(generateMessage);
