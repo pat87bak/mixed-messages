@@ -17,7 +17,8 @@ This is a simple console app that generates random messages.
 To run this project, install it locally using npm:
 
 ```
-$ cd ../lorem
+$ git clone https://github.com/pat87bak/mixed-messages.git
+$ cd ../mixed_messages
 $ node main.js
 ```
 
