@@ -1,19 +1,25 @@
 Mixed Messages
 ==============
 
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
 
-## Desc - Intro
+## General info
+This is a simple console app that generates random messages.  
 
+## Technologies
+* JavaScipt
 
-## How to run
+## Setup
+To run this project, install it locally using npm:
 
-
-## Tech stack used
-
-
-## About the author
-
+```
+$ cd ../lorem
+$ node main.js
+```
 
 
 
