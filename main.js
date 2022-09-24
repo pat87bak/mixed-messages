@@ -60,6 +60,22 @@ const didKnowArr = [
 	"a duck can't walk without bobbing its head",
 ];
 
+// Jokes array for String#2
+const jokesArray = [
+	'“My father drank so heavily, when he blew on the birthday cake he lit the candles.” – Les Dawson',
+	'“I was in my car driving back from work. A police officer pulled me over and knocked on my window. I said, ‘One minute I’m on the phone.’” – Alan Carr',
+	'“I worry about ridiculous things, you know, how does a guy who drives a snowplough get to work in the morning… that can keep me awake for days.” – Billy Connolly',
+	'“I used to go out with a giraffe. Used to take it to the pictures and that. You’d always get some bloke complaining that he couldn’t see the screen. It’s a giraffe, mate. What do you expect? ‘Well he can take his hat off for a start!’” – Paul Merton',
+	'“Here’s a picture of me with REM. That’s me in the corner.” – Milton Jones',
+	'“People say ‘Bill, are you an optimist?’ And I say, ‘I hope so.’” – Bill Bailey',
+	'“I rang up British Telecom and said: ‘I want to report a nuisance caller.’ He said: ‘Not you again.’” – Tim Vine',
+	'“Life is like a box of chocolates. It doesn’t last long if you’re fat.” – Joe Lycett',
+	'“We weren’t very religious. On Hanukkah, my mother had our menorah on a dimmer.” – Richard Lewis',
+	'“My girlfriend is absolutely beautiful. Body like a Greek statue – completely pale, no arms.” – Phil Wang',
+	'“If God had written the Bible, the first line should have been ‘It’s round.’” – Eddie Izzard',
+	'“Two fish in a tank. One says: ‘How do you drive this thing?’” – Peter Kay',
+];
+
 // function that selects greetings based on time of the day - creates String#1
 const getString1 = (msgArr) => {
 	const hour = new Date().getHours();
@@ -69,8 +85,8 @@ const getString1 = (msgArr) => {
 		return hour >= obj['start'] && hour <= obj['end'];
 	});
 
-	let string1 =  selectedObj.message;
-    return string1;
+	let string1 = selectedObj.message;
+	return string1;
 };
 
 /*
@@ -79,9 +95,9 @@ console.log(getString1(greetingsArr));
 */
 
 // function to select random string from "Did you know array" - String#2
-const getString2 = arr => {
-    let string2 = arr[Math.floor(Math.random() * arr.length)];
-    return string2;
+const getString2 = (arr) => {
+	let string2 = arr[Math.floor(Math.random() * arr.length)];
+	return string2;
 };
 
 /*
