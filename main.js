@@ -104,3 +104,20 @@ const getStringFromArray = (arr) => {
 console.log(getStringFromArray(didKnowArr));
 console.log(getStringFromArray(jokesArray));
 */
+
+
+// function to create a random message based on 3 string
+const generateMessage = () => {
+    const string1 = getString1(greetingsArr);
+    const string2 = getStringFromArray(didKnowArr);
+    const string3 = getStringFromArray(jokesArray);
+
+    let msg = string1 + "\n\n"; 
+    msg += "Did you know? \n";
+    msg += string2 + "\n\n";
+    msg += "Let me tell you a joke now :) \n";
+    msg += string3 + "\n\n";
+    msg += "Bye....";
+
+    return msg;
+};
