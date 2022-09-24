@@ -94,13 +94,13 @@ const getString1 = (msgArr) => {
 console.log(getString1(greetingsArr));
 */
 
-// function to select random string from "Did you know array" - String#2
-const getString2 = (arr) => {
-	let string2 = arr[Math.floor(Math.random() * arr.length)];
-	return string2;
+// function to select random string from array
+const getStringFromArray = (arr) => {
+	return arr[Math.floor(Math.random() * arr.length)];
 };
 
 /*
-// Test getString2 function
-console.log(getString2(didKnowArr));
+// Test getStringFromArray function
+console.log(getStringFromArray(didKnowArr));
+console.log(getStringFromArray(jokesArray));
 */
